@@ -1,0 +1,12 @@
+{
+  "name": "StudioArchitect",
+  "description": "Native macOS photography workflow hub managing sessions from SD card import through client delivery",
+  "status": "in-progress",
+  "stage": "prototype",
+  "momentum": "low",
+  "priority": "low",
+  "blockers": [],
+  "next_action": "Phase 1: Verify project builds, confirm GRDB is integrated via SPM, and wire up database migrations and record types",
+  "last_updated": "2026-03-12",
+  "notes": "Skeleton exists (app entry, DB models, feature views) but has not been built or run yet. UI is all placeholder. Other projects take priority for now."
+}

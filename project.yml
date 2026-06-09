@@ -1,0 +1,54 @@
+name: StudioArchitect
+
+options:
+  bundleIdPrefix: com.adamdavis
+  deploymentTarget:
+    macOS: "15.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+packages:
+  GRDB:
+    url: https://github.com/groue/GRDB.swift
+    from: "6.0.0"
+
+targets:
+  StudioArchitect:
+    type: application
+    platform: macOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: StudioArchitect
+        excludes:
+          - Info.plist
+    dependencies:
+      - package: GRDB
+        product: GRDB
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.adamdavis.StudioArchitect
+        SWIFT_VERSION: "6.0"
+        MACOSX_DEPLOYMENT_TARGET: "15.0"
+        ENABLE_HARDENED_RUNTIME: YES
+        CODE_SIGN_STYLE: Automatic
+    info:
+      path: StudioArchitect/Info.plist
+      properties:
+        CFBundleName: Studio Architect
+        CFBundleDisplayName: Studio Architect
+        NSHumanReadableCopyright: "© 2026 Adam Davis"
+        NSPrincipalClass: NSApplication
+        NSSupportsAutomaticGraphicsSwitching: true
+        LSMinimumSystemVersion: "15.0"
+
+  StudioArchitectTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - StudioArchitectTests
+    dependencies:
+      - target: StudioArchitect
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.adamdavis.StudioArchitectTests
+        SWIFT_VERSION: "6.0"
