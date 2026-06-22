@@ -50,9 +50,9 @@ New photographers waste months:
 **"The workflow no one told you about"** — We're revealing the insider knowledge that established photographers keep to themselves.
 
 ### Supporting Messages
-- **One app, entire workflow** — Import, cull, edit, deliver, archive. No more juggling tools.
-- **Architect your own workflow** — Use the pieces you want, skip what you don't. It's modular.
-- **Your files, your machine** — Nothing leaves your computer unless you say so. Privacy-first.
+- **One app, entire workflow** — Import, cull, edit, deliver, archive — all native, in a single application. No more juggling tools.
+- **Architect your own workflow** — Use the stages you want, skip what you don't. Every step is optional within the one app (not separate tools you bolt together).
+- **Your files, your machine** — Nothing leaves your computer unless you say so. Privacy-first. (Optional photo hosting is the one time files leave — and only when you choose to share a gallery.)
 - **Focus on photos, not tech** — The business plumbing is handled. Go shoot.
 
 ---
@@ -71,11 +71,13 @@ New photographers waste months:
 - **Not enterprise software** — Built for beginners, not agencies
 - **Not another editing app** — Works with Lightroom, doesn't replace it
 - **Not cloud-dependent** — Your files stay on your machine
-- **Not à la carte chaos** — One integrated workflow, modular but unified
+- **Not à la carte chaos** — One integrated workflow in a single app, not a pile of tools you wire together
 
 ---
 
 ## Pricing Model
+
+> **Placeholder — not locked.** These numbers predate the shift to a single complete app (incl. native ML cull). Revisit before launch; the architecture/positioning work does not depend on them.
 
 | Tier | Price | What You Get |
 |------|-------|--------------|
@@ -86,6 +88,10 @@ New photographers waste months:
 | **Lifetime** | $250* | Unlimited forever + all future features |
 
 *Lifetime price increases as major features are added (CRM, Marketing, etc.). Early adopters get the best deal.*
+
+### Optional Add-On (future): Photo Hosting
+
+Separate **optional monthly subscription** for client-facing photo hosting — upload finals, share a URL, client views + downloads (print ordering included once available). Priced separately from the session model because it carries genuine recurring storage/bandwidth cost. **Opt-in only:** it does not change the local-first, "your files stay on your machine" default — nothing uploads unless the photographer chooses it. *(Delivered via a third-party gallery platform first; our own hosting only if demand is proven.)*
 
 ### Why This Model
 - **No subscription guilt** — Pay only when you have work
@@ -107,17 +113,19 @@ A side-hustle photographer charging $300/session pays $3.50 (one session from a 
 
 | Product | Role | Pricing |
 |---------|------|---------|
-| **Studio Architect** | Main brand, unified workflow | Session-based (see above) |
-| CullSnap | Standalone culling app | $2-5 one-time |
-| FirstPass | Standalone basic edits app | $2-5 one-time |
-| TriPod | Standalone import/backup app | $2-5 one-time |
+| **Studio Architect** | Main brand, complete native workflow app | Session-based (see above) |
+| CullSnap | Standalone culling app — **transitional** | $2-5 one-time |
+| FirstPass | Standalone basic edits app — **transitional** | $2-5 one-time |
+| TriPod | Standalone import/backup app — **transitional** | $2-5 one-time |
+
+The standalone apps are **separate products with no link to Studio Architect**. They serve two roles during the build-out: (1) low-cost acquisition funnel — a beginner buys a cheap single-purpose app, hits its ceiling, and graduates to Studio Architect; (2) feature incubators where ideas are validated before being **rebuilt natively** in Studio Architect. They are **sunset over time** as Studio Architect matures.
 
 ### Inside Studio Architect
-The standalone apps become workflow steps — no separate branding:
-1. Import (TriPod functionality)
-2. Cull (CullSnap functionality)
-3. Basic Edits (FirstPass functionality)
-4. Detail Edits (external app)
+Studio Architect implements every stage **natively** (it does not launch or embed the standalone apps):
+1. Import — native SD-card ingest
+2. Cull — native ML-assisted culling
+3. Basic Edits — native auto-adjustments → XMP
+4. Detail Edits — handoff to the user's external editor (Lightroom/Capture One)
 5. Export
 6. Deliver
 7. Archive
@@ -144,10 +152,10 @@ The standalone apps become workflow steps — no separate branding:
 - Light content marketing — YouTube, Reddit, Instagram
 
 ### Phase 3: Build
-**Goal:** Develop unified Studio Architect experience
+**Goal:** Develop the complete native Studio Architect app
 
-- Integrate modules with shared database
-- Build dashboard/hub
+- Build the native workflow stages and dashboard inside one app
+- Pull validated features from the incubator apps (CullSnap/FirstPass/TriPod) and rebuild them natively
 - Beta test with waitlist members
 - Iterate based on feedback
 

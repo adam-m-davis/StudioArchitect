@@ -24,6 +24,15 @@ targets:
     dependencies:
       - package: GRDB
         product: GRDB
+    entitlements:
+      path: StudioArchitect/StudioArchitect.entitlements
+      properties:
+        # App Store distribution requires the App Sandbox.
+        com.apple.security.app-sandbox: true
+        # Import: user picks the SD card / source folder via NSOpenPanel.
+        com.apple.security.files.user-selected.read-write: true
+        # Persist access to user-selected SD cards / external drives across launches.
+        com.apple.security.files.bookmarks.app-scope: true
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.adamdavis.StudioArchitect

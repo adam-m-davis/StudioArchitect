@@ -35,3 +35,6 @@ memory/
 
 # Docs / scratch
 files.zip
+
+# XcodeGen-generated entitlements (source of truth is project.yml)
+StudioArchitect/StudioArchitect.entitlements

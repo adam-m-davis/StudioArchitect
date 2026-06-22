@@ -1,12 +1,12 @@
 {
   "name": "StudioArchitect",
-  "description": "Native macOS photography workflow hub managing sessions from SD card import through client delivery",
+  "description": "Native macOS photography workflow app (single self-contained product, App Store / sandboxed) managing sessions from SD card import through client delivery",
   "status": "in-progress",
   "stage": "prototype",
   "momentum": "low",
   "priority": "low",
   "blockers": [],
   "next_action": "Phase 1: Verify project builds, confirm GRDB is integrated via SPM, and wire up database migrations and record types",
-  "last_updated": "2026-03-12",
-  "notes": "Skeleton exists (app entry, DB models, feature views) but has not been built or run yet. UI is all placeholder. Other projects take priority for now."
+  "last_updated": "2026-06-21",
+  "notes": "Architecture pivot (2026-06-21): dropped the hub+shared-DB+launch-other-apps model. Studio Architect is now a single self-contained app that natively implements the full pipeline (incl. ML cull). Standalone apps (CullSnap/FirstPass/TriPod) are separate feature incubators with NO integration, sunset over time. Distribution = Mac App Store (sandboxed): EXIF via ImageIO not exiftool, SD/drive access via security-scoped bookmarks, DB in app container. Audience = hobbyist/side-hustler. Pricing = placeholder, to revisit. Docs (CLAUDE.md, both foundation docs, dev plan) updated to match. Skeleton exists but not yet built/run; UI placeholder."
 }
